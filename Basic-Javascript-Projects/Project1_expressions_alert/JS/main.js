@@ -15,3 +15,12 @@ document.write(3*3); //writing an expression
 var Sent1 = "This is the beginnning of the string. ";
 var Sent2 = "This is the end of the string.";
 document.write(Sent1+Sent2);
+
+function displayDate() {
+    document.getElementById("name").innerHTML = Date();
+}
+
+function displayMessage() {
+    var str = "You got this message.";
+    document.getElementById("message").innerHTML = str;
+}
