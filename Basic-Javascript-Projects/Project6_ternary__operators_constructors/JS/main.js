@@ -25,3 +25,16 @@ function myFunction() {
     document.getElementById("Keywords_and_Constructors").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year + ".";
 }
 
+function Camp(Date, Address, Theme) {
+    this.Camp_Date = Date;
+    this.Camp_Address = Address;
+    this.Camp_Theme = Theme;
+}
+
+var week_One = new Camp("July 12-16", "123 A street", "storybook");
+var week_Two = new Camp("Aug 1-5", "456 B street", "magic");
+var week_Three = new Camp("Aug 20-24", "789 C street", "piano");
+function Camp_Function() {
+    document.getElementById("New_and_This").innerHTML = "Between " + week_One.Camp_Date + ", Cora will be at " + week_One.Camp_Theme + " camp, located at " + week_One.Camp_Address + ".";
+}
+
