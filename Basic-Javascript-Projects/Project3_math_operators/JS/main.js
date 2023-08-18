@@ -22,3 +22,8 @@ function moreOperations() {
     var morenumbers = (3-2) + 1 / 2 * 2;
     document.getElementById("More").innerHTML="3 minus 2, plus 1, divided by 2, times 2 equals " + morenumbers;
 }
+
+function modulusOperator() {
+    var simple_Math = 45 % 6;
+    document.getElementById("Modulus").innerHTML = "When you divide 45 by 6, you have a remainder of: " + simple_Math;
+}
