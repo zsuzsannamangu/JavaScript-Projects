@@ -25,24 +25,24 @@ function moreOperations() {
 
 function modulusOperator() {
     var simple_Math = 45 % 6;
-    document.getElementById("Modulus").innerHTML = "When you divide 45 by 6, you have a remainder of: " + simple_Math;
+    document.getElementById("Modulus").innerHTML = "When you divide 45 by 6, you have a remainder of: " + simple_Math; //returns the remainder
 }
 
 function negationOperator() {
     var x = 10;
-    document.getElementById("Negation").innerHTML = "The negative of 10 is " + -x;
+    document.getElementById("Negation").innerHTML = "The negative of 10 is " + -x; //returns the opposite or negative of x
 }
 
 function incrementOperator() {
     var a = 10;
     a++;
-    document.getElementById("Increment").innerHTML = "10 + 1 is " + a;
+    document.getElementById("Increment").innerHTML = "10 + 1 is " + a; //a++ adds one
 }
 
 function decrementOperator() {
     var b = 5;
     b--;
-    document.getElementById("Decrement").innerHTML = "5 - 1 is " + b;
+    document.getElementById("Decrement").innerHTML = "5 - 1 is " + b; //b-- subtracts one
 }
 
 window.alert(Math.random()); //returns a random number between 0 and 1
