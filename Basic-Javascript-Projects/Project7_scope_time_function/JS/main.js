@@ -27,7 +27,18 @@ function getDate() {
 }
 
 function ifStatement() {
-    if (10 > 5);
+    if (10 > 5); {
     document.getElementById("if").innerHTML = "correct";
+    }
+}
 
+function age_Function() {
+    Age = document.getElementById("input_Age").value;
+    if (Age>=18) {
+        Vote = "You are old enough to vote.";
+    }
+    else {
+        Vote = "You are not old enough to vote.";
+    }
+    document.getElementById("age").innerHTML = Vote;
 }
