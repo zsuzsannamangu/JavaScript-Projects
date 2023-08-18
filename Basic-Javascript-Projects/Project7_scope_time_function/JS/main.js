@@ -1,4 +1,4 @@
-var c = 5;
+var c = 5; //global variables
 var d = 4;
 
 function Subtraction () {
@@ -7,33 +7,34 @@ function Subtraction () {
 }
 
 function Addition() {
-    var a = 2;
+    var a = 2; // a and b are local variables
     var b = 2;
     var add = a + b + c;
     document.getElementById("add_Numbers").innerHTML = "2 + 2 + 5 is " + add;
 }
 
 function Multiplication() {
-    var multiply = a * c;
+    var multiply = a * c; //a is a local variable in another function so it can't be used in this function, I used DevTools for debugging
     document.getElementById("multiply_Numbers").innerHTML = "2 * 5 is " + multiply;
 }
 
 document.write(new Date());
 
 function getDate() {
-    if (new Date().getHours() < 16) {
+    if (new Date().getHours() < 16) { //new Date() is a built in function that displays the date, .getHours() displays the hours passed, 
+        //13 means it's between 1-2pm
     document.getElementById("hours").innerHTML = "Good afternoon!";
     }
 }
 
 function ifStatement() {
     if (10 > 5); {
-    document.getElementById("if").innerHTML = "correct";
+    document.getElementById("if").innerHTML = "correct"; //if statement = if 10 > 5, write correct
     }
 }
 
 function age_Function() {
-    Age = document.getElementById("input_Age").value;
+    Age = document.getElementById("input_Age").value; //if and else statements = depending on user input, display one or the other message
     if (Age>=18) {
         Vote = "You are old enough to vote.";
     }
@@ -43,7 +44,7 @@ function age_Function() {
     document.getElementById("age").innerHTML = Vote;
 }
 
-function Time_function() {
+function Time_function() { //if, else if, and else statements
     var Time = new Date().getHours();
     var Reply;
     if (Time < 12 == Time > 0) { // == means AND
@@ -55,5 +56,5 @@ function Time_function() {
     else {
         Reply = "It is evening time.";
     }
-    document.getElementById("Time_of_day").innerHTML = Reply;
+    document.getElementById("Time_of_day").innerHTML = Reply; //depending on the current time, it will display the correct message
 }
