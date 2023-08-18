@@ -25,3 +25,5 @@ function displayInfinity() {
     document.getElementById("infinity").innerHTML = a; //too large numbers, it displays Infinity
     document.getElementById("infinity2").innerHTML = b; //displays negative Infinityxs
 }
+
+console.log(2+2);
