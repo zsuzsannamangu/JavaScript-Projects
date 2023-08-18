@@ -28,7 +28,7 @@ document.write("Boolean logic:");
 document.write("<br>");
 document.write(10 > 2); //Boolean logic - true since 10 is greater than 2
 document.write("<br>");
-document.write(2 > 10); //Boolean logic - false since 2 is not greater than 10
+document.write(10 < 2); //Boolean logic - false since 2 is not greater than 10
 document.write("<br>");
 document.write("<br>");
 document.write(10 == 10); //10 equals 10 so that's true
