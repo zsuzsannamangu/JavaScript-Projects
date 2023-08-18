@@ -32,3 +32,19 @@ function negationOperator() {
     var x = 10;
     document.getElementById("Negation").innerHTML = "The negative of 10 is " + -x;
 }
+
+function incrementOperator() {
+    var a = 10;
+    a++;
+    document.getElementById("Increment").innerHTML = "10 + 1 is " + a;
+}
+
+function decrementOperator() {
+    var b = 5;
+    b--;
+    document.getElementById("Decrement").innerHTML = "5 - 1 is " + b;
+}
+
+window.alert(Math.random()); //returns a random number between 0 and 1
+
+window.alert(Math.random() * 200); //returns a random number between 0 and 200
