@@ -17,3 +17,12 @@ function Multiplication() {
     var multiply = a * c;
     document.getElementById("multiply_Numbers").innerHTML = "2 * 5 is " + multiply;
 }
+
+document.write(new Date());
+
+function getDate() {
+    if (new Date().getHours() < 16) {
+    document.getElementById("hours").innerHTML = "Good afternoon!";
+    }
+}
+
