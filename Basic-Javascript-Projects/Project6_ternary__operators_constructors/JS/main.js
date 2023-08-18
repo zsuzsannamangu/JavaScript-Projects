@@ -38,3 +38,15 @@ function Camp_Function() {
     document.getElementById("New_and_This").innerHTML = "Between " + week_One.Camp_Date + ", Cora will be at " + week_One.Camp_Theme + " camp, located at " + week_One.Camp_Address + ".";
 }
 
+function count_Function() {
+    document.getElementById("Nested_Function").innerHTML = Count();
+    function Count() {
+        var starting_point = 9;
+        function Plus_one() {
+            starting_point += 1;
+        }
+        Plus_one(); //call the function Plus_One()
+        return starting_point;
+    }
+}
+
