@@ -1,4 +1,4 @@
-function Ride_Function() {
+function Ride_Function() { //ternary operation
     var Height, Can_ride;
     Height = document.getElementById("Height").value; 
     Can_ride = (Height < 52) ? "You are too short" : "You are tall enough"; //ternary operator syntax = Name_of_variable = (condition) ? Value_1:Value_2, if it's true displays left, if it's false, displays right
@@ -42,10 +42,10 @@ function count_Function() {
     document.getElementById("Nested_Function").innerHTML = Count();
     function Count() {
         var starting_point = 9;
-        function Plus_one() {
+        function Plus_one() { //nested function
             starting_point += 1;
         }
-        Plus_one(); //call the function Plus_One()
+        Plus_one(); //call the function named Plus_One()
         return starting_point;
     }
 }
