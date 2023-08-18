@@ -25,13 +25,13 @@ function myFunction() {
     document.getElementById("Keywords_and_Constructors").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year + ".";
 }
 
-function Camp(Date, Address, Theme) {
+function Camp(Date, Address, Theme) { //Object constructor function
     this.Camp_Date = Date;
     this.Camp_Address = Address;
     this.Camp_Theme = Theme;
 }
 
-var week_One = new Camp("July 12-16", "123 A street", "storybook");
+var week_One = new Camp("July 12-16", "123 A street", "storybook"); //Objects of the same type are created by calling the constructor function with the "new" keyword
 var week_Two = new Camp("Aug 1-5", "456 B street", "magic");
 var week_Three = new Camp("Aug 20-24", "789 C street", "piano");
 function Camp_Function() {
