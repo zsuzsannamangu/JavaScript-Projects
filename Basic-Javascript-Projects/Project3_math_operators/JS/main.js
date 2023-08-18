@@ -17,3 +17,8 @@ function Division() {
     var dividenumbers = 6 / 3;
     document.getElementById("Divide").innerHTML="6 / 3 = " + dividenumbers;
 }
+
+function moreOperations() {
+    var morenumbers = (3-2) + 1 / 2 * 2;
+    document.getElementById("More").innerHTML="3 minus 2, plus 1, divided by 2, times 2 equals " + morenumbers;
+}
