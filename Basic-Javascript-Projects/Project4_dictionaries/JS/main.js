@@ -4,6 +4,7 @@ function plant_Dictionary() {
         Type: "Congo",
         Pot_color: "Red",
         Place: "Room2",
+        Place: "Room3",
     }
     document.getElementById("dictionary").innerHTML = Plant.Place;
 }
