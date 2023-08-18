@@ -18,6 +18,9 @@ document.write(10 > 2); //Boolean logic - true since 10 is greater than 2
 document.write("<br>");
 document.write(2 > 10); //Boolean logic - false since 2 is not greater than 10
 document.write("<br>");
+document.write(10 == 10);
+document.write("<br>");
+document.write(5 == 3);
 
 function displayInfinity() {
     var a = 2E322;
