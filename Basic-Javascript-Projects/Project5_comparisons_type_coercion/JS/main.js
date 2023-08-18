@@ -13,3 +13,10 @@ document.write("<br>");
 document.write(2E310); //displays Infinity
 document.write("<br>");
 document.write(-3E310); //displays negative Infinity
+
+function displayInfinity() {
+    var a = 2E322;
+    var b = -2E345;
+    document.getElementById("infinity").innerHTML = a;
+    document.getElementById("infinity2").innerHTML = b;
+}
