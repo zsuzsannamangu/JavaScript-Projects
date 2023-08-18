@@ -10,3 +10,6 @@ document.write(isNaN("Hello")); //returns true, because Hello is indeed not a nu
 document.write("<br>");
 document.write(isNaN(5)); //returns false, because 5 is a number
 document.write("<br>");
+document.write(2E310); //displays Infinity
+document.write("<br>");
+document.write(-3E310); //displays negative Infinity
