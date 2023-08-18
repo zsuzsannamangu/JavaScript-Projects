@@ -48,3 +48,7 @@ function decrementOperator() {
 window.alert(Math.random()); //returns a random number between 0 and 1
 
 window.alert(Math.random() * 200); //returns a random number between 0 and 200
+
+function math_Object() {
+    document.getElementById("mathObject").innerHTML = Math.trunc(2.111); //returns integer part of x number
+}
