@@ -10,3 +10,18 @@ function Voter_Function() {
     var Can_vote = (Age >= 18) ? "You can" : "You can't";
     document.getElementById("Vote").innerHTML = Can_vote + " vote.";
 }
+
+function Vehicle(Make, Model, Year, Color) { //The function “Vehicle()” is an object constructor.
+    this.Vehicle_Make = Make; //The “this” keyword allows you to essentially create a placeholder of undetermined values until the new object is created from the object constructor.
+    this.Vehicle_Model = Model; //this.Vehicle_Model = Model; would translate to Erik.Vehicle_Model = “Pinto”;
+    this.Vehicle_Year = Year; //so this is the placeholder for Jack, Emily and Erik
+    this.Vehicle_Color = Color;
+}
+
+var Jack = new Vehicle("Dodge", "Viper", 2020, "Red"); //“new” keyword is used to create objects of the Vehicle function. Then we have defined the values for each Make, Model, Year, and Color.
+var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
+var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
+function myFunction() {
+    document.getElementById("Keywords_and_Constructors").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year + ".";
+}
+
