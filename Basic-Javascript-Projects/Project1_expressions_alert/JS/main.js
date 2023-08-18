@@ -21,6 +21,6 @@ function displayDate() {
 }
 
 function displayMessage() {
-    var str = "You got this message.";
+    var str = "You got this message since you moved your mouse over an HTML element.";
     document.getElementById("message").innerHTML = str;
 }
