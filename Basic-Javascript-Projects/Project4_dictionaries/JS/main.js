@@ -3,8 +3,8 @@ function plant_Dictionary() {
         Name: "Philodendron",
         Type: "Congo",
         Pot_color: "Red",
-        Place: "Room2",
         Place: "Room3",
-    }
+    };
+    delete Plant.Place;
     document.getElementById("dictionary").innerHTML = Plant.Place;
 }
