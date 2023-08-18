@@ -14,13 +14,43 @@ document.write(2E310); //displays Infinity
 document.write("<br>");
 document.write(-3E310); //displays negative Infinity
 document.write("<br>");
+document.write("<br>");
 document.write(10 > 2); //Boolean logic - true since 10 is greater than 2
 document.write("<br>");
 document.write(2 > 10); //Boolean logic - false since 2 is not greater than 10
 document.write("<br>");
-document.write(10 == 10);
 document.write("<br>");
-document.write(5 == 3);
+document.write(10 == 10); //10 equals 10 so that's true
+document.write("<br>");
+document.write(5 == 3); //5 does not equal 3 so that's false
+document.write("<br>");
+document.write("<br>");
+
+document.write("Triple Equal Signs Assignment:")
+document.write("<br>");
+X=82;
+Y="12";
+Z=82;
+A="82";
+B=22;
+document.write(X===Z);
+document.write("<br>");
+document.write(X === Y);
+document.write("<br>");
+document.write(X===A);
+document.write("<br>");
+document.write(Z===B);
+
+
+
+
+
+
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
 
 function displayInfinity() {
     var a = 2E322;
