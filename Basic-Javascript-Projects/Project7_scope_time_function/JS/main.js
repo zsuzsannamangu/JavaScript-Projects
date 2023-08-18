@@ -26,3 +26,8 @@ function getDate() {
     }
 }
 
+function ifStatement() {
+    if (10 > 5);
+    document.getElementById("if").innerHTML = "correct";
+
+}
