@@ -27,3 +27,8 @@ function modulusOperator() {
     var simple_Math = 45 % 6;
     document.getElementById("Modulus").innerHTML = "When you divide 45 by 6, you have a remainder of: " + simple_Math;
 }
+
+function negationOperator() {
+    var x = 10;
+    document.getElementById("Negation").innerHTML = "The negative of 10 is " + -x;
+}
