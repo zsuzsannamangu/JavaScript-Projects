@@ -5,3 +5,10 @@ function concat_Function() {
     var sentence = a.concat(b, c);
     document.getElementById("concat").innerHTML = sentence;
 }
+
+function slice_Function() {
+    var a = "Successfully execute the index.html file in the browser."
+    var full = a.slice(13, 20);
+    document.getElementById("slice").innerHTML = full;
+}
+
