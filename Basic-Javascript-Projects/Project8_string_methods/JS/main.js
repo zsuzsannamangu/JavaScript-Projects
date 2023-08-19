@@ -12,3 +12,15 @@ function slice_Function() {
     document.getElementById("slice").innerHTML = full;
 }
 
+function uppercase_Function () {
+    var a = "New Seasons Market";
+    var b = a.toUpperCase();
+    document.getElementById("uppercase").innerHTML = b;
+}
+
+function search_Function () {
+    var a = "This is a not that long sentence."
+    var b = a.search("not");
+    document.getElementById("search").innerHTML = b;
+}
+
