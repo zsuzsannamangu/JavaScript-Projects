@@ -29,3 +29,8 @@ function string_Function() {
     document.getElementById("string").innerHTML = a.toString();
 }
 
+function precision_Function() {
+    var a = 1234688.2372927393;
+    document.getElementById("precision").innerHTML = a.toPrecision(13);
+}
+
