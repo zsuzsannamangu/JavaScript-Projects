@@ -34,3 +34,13 @@ function precision_Function() {
     document.getElementById("precision").innerHTML = a.toPrecision(13);
 }
 
+function fixed_Function() {
+    var a = 23.14443;
+    document.getElementById("fixed").innerHTML = a.toFixed(2);
+}
+
+function valueof_Function() {
+    var a = 10 > 5;
+    document.getElementById("value").innerHTML = a.valueOf();
+}
+
