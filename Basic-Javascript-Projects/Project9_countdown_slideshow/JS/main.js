@@ -17,36 +17,37 @@ function countdown() {
     tick();
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = 1;  //Initialise the variable slideIndex to 1
+showSlides(slideIndex); //Calls the main function 'showSlides', and passes in the 1 from slideIndex above - So it says to show the first slide
+//How this function works is that it loops through the given gallery and show the image with the index passed to the function, and hides other images.
+
 
 //Next and previous controls
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function plusSlides(n) { //This function gets called when user clicks the next/previous button. This function will skip ahead n slides and show that slide.
+    showSlides(slideIndex += n); // It adds n to the index, and calls the main function 'showSlides' again. If slideIndex was 3 calling on plusSlides(n) will look for the forth index
 }
 
 //Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function currentSlide(n) {  //currentSlide(n) works with the showSlides(n) function, any value passed to currentSlide(n) will be the current image to show.
+    showSlides(slideIndex = n); //This sets slideIndex to n and then shows the nth slide
 }
 
 function showSlides(n) {
-    let i;
-    let slides =
-    document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    
-    for (i = 0; i < slides.length; i++) {
+    let i; //This variable is for iterating (adding), it's an empty variable
+    let slides = document.getElementsByClassName("mySlides"); //This variable selects the mySlides element from the DOM HTML, basically each img
+    let dots = document.getElementsByClassName("dot"); //This variable selects the dot element from the DOM HTML, the 3 dots
+    if (n > slides.length) {slideIndex = 1} //If we've reached the end of the list (gone past the last slide) we set the slideIndex back to 1.
+    if (n < 1) {slideIndex = slides.length} //If we've gone back past the first slide, go back to the end
+ 
+    for (i = 0; i < slides.length; i++) { //Iterate through all of the slides, and do what's in the {} to each slide. Set the display style to none to hide them.
         slides[i].style.display = "none";
     }
     
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
+    for (i = 0; i < dots.length; i++) { //Iterate through all of the dots, and do what's in the {} to each dot element. Remove the class name 'active' for CSS.
+        dots[i].className = dots[i].className.replace(" active", "");
     }
     
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += "active";
+    slides[slideIndex-1].style.display = "block"; //Set the display style of the slide before (-1) to 'block' - This makes it visible
+    dots[slideIndex-1].className += " active"; //Set the class name of the dot before (-1) to 'active' - Styled in CSS
 }
