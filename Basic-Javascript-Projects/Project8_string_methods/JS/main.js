@@ -24,3 +24,8 @@ function search_Function () {
     document.getElementById("search").innerHTML = b;
 }
 
+function string_Function() {
+    var a = 2344;
+    document.getElementById("string").innerHTML = a.toString();
+}
+
