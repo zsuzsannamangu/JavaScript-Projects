@@ -64,3 +64,14 @@ document.getElementById("names").innerHTML = Naming("Lili");
 function Naming(firstname) {
     return "Hello " + firstname;
 }
+
+let plant = {
+    name : "Philodendron",
+    type: "Congo",
+    pot_Type: "ceramic",
+    light: "sunny",
+    description: function() {
+        return "This plant is a " + this.name + " " + this.type + " in a " + this.pot_Type + " pot.";
+        }
+};
+document.getElementById("Plant_Object").innerHTML = plant.description();
