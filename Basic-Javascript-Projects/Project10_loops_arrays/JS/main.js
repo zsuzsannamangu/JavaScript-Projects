@@ -40,7 +40,7 @@ function constant_function() {
     document.getElementById("Constant").innerHTML = "The cost of the " + Musical_Instrument.type + " was " + Musical_Instrument.price + ".";
 }
 
-var X = 5;
+var X = 5; //it wouldn't work to use let here, I'd get an error message that X has already been defined
 function subtraction() {
     let Y = 4;
     let Z = X - Y;
@@ -51,4 +51,16 @@ function new_Subtraction() {
     let Y = 9;
     let Z = X - Y;
     document.getElementById("new_subtract").innerHTML = Z;
+}
+
+document.getElementById("multiply").innerHTML = Multiplication(2, 3);
+
+function Multiplication(a, b) {
+    return a * b;
+}
+
+document.getElementById("names").innerHTML = Naming("Lili");
+
+function Naming(firstname) {
+    return "Hello " + firstname;
 }
