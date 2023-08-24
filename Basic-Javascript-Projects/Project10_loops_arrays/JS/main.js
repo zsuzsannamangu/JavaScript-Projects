@@ -39,3 +39,16 @@ function constant_function() {
     Musical_Instrument.price = "$900";
     document.getElementById("Constant").innerHTML = "The cost of the " + Musical_Instrument.type + " was " + Musical_Instrument.price + ".";
 }
+
+var X = 5;
+function subtraction() {
+    let Y = 4;
+    let Z = X - Y;
+    document.getElementById("subtract").innerHTML = Z;
+}
+
+function new_Subtraction() {
+    let Y = 9;
+    let Z = X - Y;
+    document.getElementById("new_subtract").innerHTML = Z;
+}
