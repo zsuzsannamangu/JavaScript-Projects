@@ -65,13 +65,13 @@ function Naming(firstname) {
     return "Hello " + firstname;
 }
 
-let plant = {
+let plant = { //Object with properties and a method
     name : "Philodendron",
     type: "Congo",
     pot_Type: "ceramic",
     light: "sunny",
-    description: function() {
-        return "This plant is a " + this.name + " " + this.type + " in a " + this.pot_Type + " pot.";
+    description: function() { //this is always function(), you can't name it something else
+        return "This plant is a " + this.name + " " + this.type + " in a " + this.pot_Type + " pot."; //return statement and this keyword to be able to perform the method on the object defined above
         }
 };
 document.getElementById("Plant_Object").innerHTML = plant.description();
