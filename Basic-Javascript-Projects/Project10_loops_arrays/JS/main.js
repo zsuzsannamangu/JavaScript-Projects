@@ -75,3 +75,23 @@ let plant = { //Object with properties and a method
         }
 };
 document.getElementById("Plant_Object").innerHTML = plant.description();
+
+//break statement can be used to jump out of a loop
+//continue statement can be used to jump over one iteration in the loop
+
+let sentence = "";
+for (let i = 0; i < 10; i++) { //we start with i being zero, keep looping, as long as i is less than 10, add 1 to i
+    if (i === 3) { break; } //however if i equals 3, jump out of the loop
+    sentence += "The number is " + i + "<br>";
+
+    document.getElementById("break").innerHTML = sentence;
+}
+
+let next_sentence = "";
+for (let i = 0; i < 10; i++) {
+    if (i === 4) { continue; } //when i = 4, skip that and continue the loop with the next one
+    next_sentence = next_sentence + "The number is " + i + "<br>" + ".";
+
+    document.getElementById("continue").innerHTML = next_sentence;
+}
+
