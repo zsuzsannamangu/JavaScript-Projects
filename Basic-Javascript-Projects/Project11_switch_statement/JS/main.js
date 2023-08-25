@@ -30,3 +30,18 @@ function classPractice_function() {
     var a = document.getElementsByClassName("Class_practice");
     a[1].innerHTML = "This is some text.";
 }
+
+function my_Canvas() {
+    const myCanvas = document.getElementById("canvas_Id");
+    const ctx = myCanvas.getContext("2d");
+
+    ctx.beginPath();
+    ctx.moveTo(50, 50);
+    ctx.lineTo(50, 200);
+    ctx.lineTo(450, 200);
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+
+    var img = document.getElementById("pictureimg");
+    ctx.drawImage(img, 50, 20);
+}
