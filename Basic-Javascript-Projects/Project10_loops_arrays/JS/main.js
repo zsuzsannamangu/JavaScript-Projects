@@ -1,12 +1,17 @@
 function Call_Loop() {
     var X = ""; //empty variable as this is the result
     var Y = 1; //initial value of Y is 1
-    while (Y < 11) { //as long as Y is less than 11
+    while (Y < 11) { //as long as Y is less than 11. While loop is used vs for loop when the number of iterations (repetitions) is unknown
         X += "<br>" + Y; //as long as Y is less than 11, execute this code: X = X + "<br>"" + Y, so we add Y to X. <br> means new line
         Y++; //as long as Y is less than 11, also execute this line of code: Y = Y + 1
     }
     document.getElementById("Loop").innerHTML= X;
 }
+
+//syntax of while loop:
+//while ([condition]) {
+    //[loop]
+//}
 
 let text = "Hello";
 let length = text.length; //The length property returns the length of a string
@@ -16,12 +21,17 @@ var Instruments = ["Guitar", "Bass", "Ukulele", "Drum", "Chello"]; //"Guitar" is
 var X = "";
 var Y;
 
-function for_Loop() {
+function for_Loop() { //For loop is used when the number of iterations (repetitions) is known
     for (Y = 0; Y < Instruments.length; Y++) {
         X += Instruments[Y] + "<br>";
     }
     document.getElementById("Lists_of_Instruments").innerHTML = X;
 }
+
+//syntax of for loop:
+//for ([initialization]; [condition]; [iteration]) {
+    //[loop]
+//}
 
 function array_Function() {
     var Cats = [];
@@ -75,6 +85,7 @@ let plant = { //Object with properties and a method
         }
 };
 document.getElementById("Plant_Object").innerHTML = plant.description();
+
 
 //break statement can be used to jump out of a loop
 //continue statement can be used to jump over one iteration in the loop
