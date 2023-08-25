@@ -25,3 +25,8 @@ function dessert_Function() {
     } 
     document.getElementById("Output").innerHTML = Dessert_output;
 }
+
+function classPractice_function() {
+    var a = document.getElementsByClassName("Class_practice");
+    a[1].innerHTML = "This is some text.";
+}
