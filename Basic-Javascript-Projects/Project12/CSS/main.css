@@ -1,0 +1,27 @@
+input[type=text] {
+    background-color: #c5d6d0;
+    border: 1px grey;
+    color: rgb(31, 31, 31);
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 25%;
+  }
+
+  input[type=submit] {
+    background-color: #95e3c8;
+    border: 1px grey;
+    color: rgb(31, 31, 31);
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 25%;
+  }

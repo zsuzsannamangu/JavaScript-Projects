@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+        <script src="JS/main.js" defer></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Basic Form</h2>
+        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+            <label for="firstname">First Name</label><br>
+            <input type="text" id="firstname" name="firstname" maxlength="15"><br>
+            <br>
+            <label for="lastname">Last Name</label><br>
+            <input type="text" id="lastname" name="lastname" maxlength="15"><br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
