@@ -39,8 +39,25 @@ function my_Canvas() {
     ctx.moveTo(50, 50);
     ctx.lineTo(50, 200);
     ctx.lineTo(450, 200);
-    ctx.strokeStyle = "red";
+   
+
+    const gradient = ctx.createLinearGradient(0, 0, 170, 0);
+    gradient.addColorStop("0.25", "coral");
+    gradient.addColorStop("0.5", "DarkRed");
+    gradient.addColorStop("0.75", "DarkKhaki");
+
+    ctx.strokeStyle = gradient;
+    ctx.lineWidth = 5;
+    ctx.strokeRect(20, 20, 150, 100);
     ctx.stroke();
+
+    ctx.font = "50px Helvetica";
+    ctx.strokeText("Hello", 38, 85);
+}
+
+function my_Picture() {
+    const myCanvas = document.getElementById("picture_id");
+    const ctx = myCanvas.getContext("2d");
 
     var img = document.getElementById("pictureimg");
     ctx.drawImage(img, 50, 20);
