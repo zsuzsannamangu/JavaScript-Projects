@@ -17,5 +17,17 @@
             <br>
             <input type="submit" value="Submit">
         </form>
+
+        <ul>
+            <!--The data-* attribute is used to store custom data. Attribute name should not contain any uppercase letters.-->
+            <!--Syntax: data-attribute_name = "attribute_value" - The value is a string.-->
+            <li><button onclick="showType(this)" id="crow" data-animal-type="bird">crow</button></li> 
+            <!--The "this" keyword references the object that is executing the current function-->
+            <li><button onclick="showType(this)" id="elephant" data-animal-type="mammal">elephant</button></li>
+            <li><button onclick="showType(this)" id="mosquito" data-animal-type="insect">mosquito</button></li>
+            <li><button onclick="showType(this)" id="fly" data-animal-type="insect">fly</button></li>
+            <li><button onclick="showType(this)" id="zebra" data-animal-type="mammal">zebra</button></li>
+            <li><button onclick="showType(this)" id="goldfinch" data-animal-type="bird">goldfinch</button></li>
+        </ul>
     </body>
 </html>
