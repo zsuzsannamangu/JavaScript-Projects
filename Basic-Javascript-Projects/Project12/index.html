@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <h2>Basic Form</h2>
+        <h2>1. Basic Form</h2>
         <form name="myForm" action="" onsubmit="return validateForm()" method="post">
             <label for="firstname">First Name</label><br>
             <input type="text" id="firstname" name="firstname" maxlength="15"><br>
@@ -18,7 +18,12 @@
             <input type="submit" value="Submit">
         </form>
 
-        <ul>
+        <h2>2. Is #18 in the array?</h2>
+        <button id="displayAge" onclick="myFunction()">click</button>
+        <p>2, 10, 18, 20, 13, 15, 30</p>
+
+        <h2>3. Click on the buttons to display the animal's type</h2>
+        <ol>
             <!--The data-* attribute is used to store custom data. Attribute name should not contain any uppercase letters.-->
             <!--Syntax: data-attribute_name = "attribute_value" - The value is a string.-->
             <li><button onclick="showType(this)" id="crow" data-animal-type="bird">crow</button></li> 
@@ -28,6 +33,7 @@
             <li><button onclick="showType(this)" id="fly" data-animal-type="insect">fly</button></li>
             <li><button onclick="showType(this)" id="zebra" data-animal-type="mammal">zebra</button></li>
             <li><button onclick="showType(this)" id="goldfinch" data-animal-type="bird">goldfinch</button></li>
-        </ul>
+        <ol>
+
     </body>
 </html>
