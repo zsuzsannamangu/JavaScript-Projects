@@ -1,0 +1,57 @@
+#menuBG {
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+/*this is for the form*/
+#frmMenu {
+    width: 400px;
+    height: 200px;
+}
+
+/*this is in the cart*/
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+/*menu on the left*/
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+/*menu on the right*/
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+/* this is in the cart*/
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+/* this is the place order button */
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+}
+
+
