@@ -1,0 +1,98 @@
+html {
+    font-size: 90%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1.2px solid darkslategray;
+    border-radius: 7px;
+    position: absolute; /*in the center*/
+    top: 50%; /*in the center*/
+    left: 50%; /*in the center*/
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+button {
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid darkslategray;
+    background-color: transparent;
+    font-size: 3.2rem;
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,0.6));
+    text-shadow: 0 1px rgba(255, 255, 255, .4);
+    /*Each value below is separated by a comma ',' after the rgba values*/
+    /*The presence of the inset keyword changes the shadow to one inside the 
+    frame. Inset shadows are drawn inside the border (even transparent ones), above the 
+    background, but below content.*/
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05),
+    inset 0 1px 0 0 rgba(255, 255, 255, .05),
+    inset 0 -1px 0 0 rgba(255, 255, 255, .05),
+    0 1px 0 0 rgba(255, 255, 255, .05);
+}
+
+button:hover {
+    background-color: #e1e1e1;
+}
+
+.operator {
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,0.5));
+    background-color: lightgray;
+}
+
+.all-clear {
+    background-color: red;
+    border-color: darkslategray;
+    color: #fff;
+}
+
+.equal-sign {
+    background-color: blue;
+    border-color: darkslategray;
+    color: #fff;
+    height: 100%;
+    grid-area: 2/4/6/5;
+    /*The grid-area property specifies a grid 
+    item's size and location in a grid layout*/
+    /*syntax: grid-row-start / grid-column-start / grid-row-end 
+    / grid-column-end | itemname;*/
+}
+
+.equal-sign:hover {
+    background-color: darkblue;
+}
+
+/*the whole thing where the buttons are*/
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*The grid-template-columns property specifies the number (and the widths) 
+    of columns in a grid layout. The values are a space separated list, 
+    where each value specifies the size of the respective column.*/
+    /*The first value passed to repeat() is the number of repetitions 
+    and the second value is the grid tracks to repeat.*/
+    /*A grid track is the space between any two adjacent lines on the grid.*/
+    grid-gap: 20px;
+    padding: 20px;
+}
