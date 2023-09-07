@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+    <script>
+        //Basic syntax is jQuery("body"). but that's is replaced by $("body"). - we are referencing the body from DOM. It's the same as saying document in JS
+        //so we target the DOM's body element and then . do something to it
+        //$("body").
+        //The document stands for the entire HTML page that we are requesting
+        //.ready = we want to check whether it's ready
+        //so when the doc is ready do this following function = function()
+        //so we are targeting the html element of the DOM with $("html")
+        //use single quotes inside of ""
+
+        //at the end we are effecting the css, color property with attribute red
+        //so we are saying that target the id2 and then go to the css of it and change the color property to red
+
+        $(document).ready(function() {
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            $("#2").css({"color":"red"});
+            $("#3").click(function() {
+                $("h1").hide();
+            });
+            $("#1").hover(function() {
+                $("h1").slideDown(800);
+            });
+        });
+    </script>
+    </body>
+</html>
