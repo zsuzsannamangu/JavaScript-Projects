@@ -20,10 +20,15 @@ h1 {
     text-align: center;
 }
 
-h3 {
+h3, h2 {
     color: rgb(214, 80, 80);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+#requested_number {
+    font-size: small;
+}
+
 
 /*this is for the form*/
 #frmMenu {
@@ -76,7 +81,7 @@ h3 {
 }
 
 /* this is the place order button */
-#btnOrder {
+#btnOrder, #btnForm {
     width: 100px;
     height: 40px;
     color:rgb(93, 36, 36);

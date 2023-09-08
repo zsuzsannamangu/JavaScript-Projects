@@ -63,3 +63,38 @@ function getTopping(runningTotal,text1) {
     document.getElementById("showText").innerHTML=text1;
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$" + runningTotal+".00"+"</strong></h3>";
 }
+
+
+function phonenumber(inputtxt) {
+    //\d{10} means you should have 10 characters matching any decimal digit (including [0-9]).
+    //var phoneno = /^\d{10}$/; - would only say that 10 digits should be entered
+  var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+  if(inputtxt.value.match(phoneno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("Not a valid phone number. Please match the requested format.");
+        return false;
+        }
+}
+
+function required(inputtx) {
+     if (inputtx.value.length == 0)
+      { 
+         alert("Please fill out all fields");  	
+         return false; 
+      }  	
+      return true;
+}
+  
+function required() {
+  if (fname.value !== "" && lname.value !== "") {
+    alert("Thank you, we received your information.");
+        return true;
+  } else {
+    alert("First and last name fields must be filled out.");
+        return false;
+  }
+}

@@ -12,8 +12,30 @@
     <body>
         <div id="menuBG">
             <h1 style="margin:80px 0px 0 20px;">Pizza Drill Tutorial</h1>
-            <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
             
+            <h2>Customer information:</h2>
+            <form name="form1" action="#" onsubmit="return required()" method="post">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="phone">Phone number:</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <p id="requested_number">Requested format: 123-456-7890</p>
+                    </div>
+                </div>
+                <button type="submit" name="submit" id="btnForm" onclick="phonenumber(document.form1.phone)">Submit</button>
+            </form>
+
+            
+            <h2>Order details:</h2>
             <form id="frmMenu">
                 
                 <div class="left">
@@ -53,6 +75,9 @@
 
             </form>
 
+            <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+
         </div>
+       
     </body>
 </html>
