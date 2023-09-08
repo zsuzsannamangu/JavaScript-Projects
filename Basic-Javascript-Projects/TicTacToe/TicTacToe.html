@@ -11,6 +11,18 @@
         <h1>Play a Tic Tac Toe Game!</h1>
     </header>
     <body id="body">
+        <!--Fade out effect: We add the fade-out class to the body as soon as the page loads. 
+            We can do this with an inline script right after the opening <body> tag:-->
+        <!--The inline script is necessary to prevent flickering, as the body would 
+            otherwise be briefly visible until the extra script is downloaded by the browser.-->
+        <script>
+            document.body.classList.add('fade-out');
+            
+            //we need to remove the fade-out class from the body once the page is loaded:
+            window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out'); 
+            });
+        </script>
         <!--this container is needed to overlay our canvas over our table. -->
         <div class="center-container">
             <!--NOTE: Canvas width and height must be within the element-->
