@@ -10,95 +10,99 @@
         <script src="Pizza_JavaScript/Pizza.js" defer></script>
     </head>
     <body>
-        <div id="menuBG">
-            <h1 style="margin:80px 0px 0 20px;">Pizza Drill Tutorial</h1>
-            
-            <h2>Customer information:</h2>
-            <form name="form1" action="#" onsubmit="return required()" method="post">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="fname">First name:</label><br>
-                        <input type="text" id="fname" name="fname"><br>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="lname">Last name:</label><br>
-                        <input type="text" id="lname" name="lname"><br>
-                    </div>
-
-                    <div class="form-group col-md-6">
-                        <label for="phone">Phone number:</label><br>
-                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                        <p id="requested_number">Requested format: 123-456-7890</p>
-                    </div>
-                </div>
-                <button type="submit" name="submit" id="btnForm" onclick="phonenumber(document.form1.phone)">Submit</button>
-            </form>
-
-            
-            <h2>Order details:</h2>
-            <form id="frmMenu">
+        <div id="background">
+            <img class="bg-img" src="Images/img-1.jpg" alt="pizza">
+        
+            <div id="menuBG">
+                <h1 style="margin:80px 0px 0 20px;">Pizza Drill Tutorial</h1>
                 
-                <div class="left">
-                    <h3>Size:</h3>
-                    <input class="size" type="radio" name="Size" value="Personal Pizza">Personal Pizza<br>
-                    <input class="size" type="radio" name="Size" value="Small Pizza">Small Pizza<br>
-                    <input class="size" type="radio" name="Size" value="Medium Pizza">Medium Pizza<br>
-                    <input class="size" type="radio" name="Size" value="Large Pizza">Large Pizza<br>
-                    <input class="size" type="radio" name="Size" value="Extra Large Pizza">Extra Large Pizza<br>
-                </div>
+                <h2>Customer information:</h2>
+                <form name="form1" action="#" onsubmit="return required()" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname"><br>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname"><br>
+                        </div>
 
-                <div class="right">
-                    <h3>Vegan Meats:</h3>
-                    <input class="toppings" type="checkbox" name="Topping" value="Smoked Tofu">Smoked Tofu<br>
-                    <input class="toppings" type="checkbox" name="Topping" value="Vegan Pepperoni">Vegan Pepperoni<br>
-                    <input class="toppings" type="checkbox" name="Topping" value="BBQ Tempeh Strips">BBQ Tempeh Strips<br>
-                    <input class="toppings" type="checkbox" name="Topping" value="Cauliflower Wings">Cauliflower Wings<br>
-                    <input class="toppings" type="checkbox" name="Topping" value="BBQ Walnut Meat">BBQ Walnut Meat<br>
-                    <input class="toppings" type="checkbox" name="Topping" value="Vegan Sausage">Vegan Sausage<br>
-                </div>
+                        <div class="form-group col-md-6">
+                            <label for="phone">Phone number:</label><br>
+                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            <p id="requested_number">Requested format: 123-456-7890</p>
+                        </div>
+                    </div>
+                    <button type="submit" name="submit" id="btnForm" onclick="phonenumber(document.form1.phone)">Submit</button>
+                </form>
 
-                <div class="middle">
-                    <h3>Vegetables:</h3>
-                    <input class="toppings" type="checkbox" name="Topping" value="Mushrooms">Mushrooms<br>
-                    <input class="toppings" type="checkbox" name="Topping" value="Broccoli">Broccoli<br>
-                    <input class="toppings" type="checkbox" name="Topping" value="Caramelized Onions">Caramelized Onions<br>
-                    <input class="toppings" type="checkbox" name="Topping" value="Roasted Garlic">Roasted Garlic<br>
-                    <input class="toppings" type="checkbox" name="Topping" value="Arugula">Arugula<br>
-                    <input class="toppings" type="checkbox" name="Topping" value="Artichoke">Artichoke<br>
-                    <input class="toppings" type="checkbox" name="Topping" value="Spinach">Spinach<br>
-                </div>
+                
+                <h2>Order details:</h2>
+                <form id="frmMenu">
+                    
+                    <div class="left">
+                        <h3>Size:</h3>
+                        <input class="size" type="radio" name="Size" value="Personal Pizza">Personal Pizza<br>
+                        <input class="size" type="radio" name="Size" value="Small Pizza">Small Pizza<br>
+                        <input class="size" type="radio" name="Size" value="Medium Pizza">Medium Pizza<br>
+                        <input class="size" type="radio" name="Size" value="Large Pizza">Large Pizza<br>
+                        <input class="size" type="radio" name="Size" value="Extra Large Pizza">Extra Large Pizza<br>
+                    </div>
 
-                <div id="cart">
-                    <div id="showText"></div>
-                    <div id="totalPrice"></div>
-                </div>
+                    <div class="right">
+                        <h3>Vegan Meats:</h3>
+                        <input class="toppings" type="checkbox" name="Topping" value="Smoked Tofu">Smoked Tofu<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Vegan Pepperoni">Vegan Pepperoni<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="BBQ Tempeh Strips">BBQ Tempeh Strips<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Cauliflower Wings">Cauliflower Wings<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="BBQ Walnut Meat">BBQ Walnut Meat<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Vegan Sausage">Vegan Sausage<br>
+                    </div>
 
-            </form>
+                    <div class="middle">
+                        <h3>Vegetables:</h3>
+                        <input class="toppings" type="checkbox" name="Topping" value="Mushrooms">Mushrooms<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Broccoli">Broccoli<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Caramelized Onions">Caramelized Onions<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Roasted Garlic">Roasted Garlic<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Arugula">Arugula<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Artichoke">Artichoke<br>
+                        <input class="toppings" type="checkbox" name="Topping" value="Spinach">Spinach<br>
+                    </div>
 
-            <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+                    <div id="cart">
+                        <div id="showText"></div>
+                        <div id="totalPrice"></div>
+                    </div>
 
-        </div>
+                </form>
+
+                <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+
+            </div>
 
         <!-- A button to open a popup form -->
-        <button class="open-button" onclick="openForm()">Questions? Chat with us!</button>
+            <button class="open-button" onclick="openForm()">Questions? Chat with us!</button>
 
         <!-- The form -->
-        <div class="form-popup" id="myForm">
-            <form action="#" class="form-container">
+            <div class="form-popup" id="myForm">
+                <form action="#" class="form-container">
 
-                <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Your name" name="name" required>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Your name" name="name" required>
 
-                <label for="msg"><b>Message</b></label>
-                <input type="text" placeholder="Your message" name="msg" required>
+                    <label for="msg"><b>Message</b></label>
+                    <input type="text" placeholder="Your message" name="msg" required>
 
-                <button type="submit" class="btn">Send</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
-        </div>
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
 
-        <div id="animation-msg">
-            <p>The best pizza in Portland!</p>
+            <div id="animation-msg">
+                <p>The best pizza in Portland!</p>
+            </div>
         </div>
 
     </body>
