@@ -78,6 +78,24 @@
             <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
 
         </div>
-       
+
+        <!-- A button to open a popup form -->
+        <button class="open-button" onclick="openForm()">Questions? Chat with us!</button>
+
+        <!-- The form -->
+        <div class="form-popup" id="myForm">
+            <form action="#" class="form-container">
+
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Your name" name="name" required>
+
+                <label for="msg"><b>Message</b></label>
+                <input type="text" placeholder="Your message" name="msg" required>
+
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
     </body>
 </html>

@@ -80,6 +80,7 @@ function phonenumber(inputtxt) {
         }
 }
 
+//Requires a valid phone number
 function required(inputtx) {
      if (inputtx.value.length == 0)
       { 
@@ -89,6 +90,7 @@ function required(inputtx) {
       return true;
 }
   
+//Requires all name fields to be filled out
 function required() {
   if (fname.value !== "" && lname.value !== "") {
     alert("Thank you, we received your information.");
@@ -97,4 +99,13 @@ function required() {
     alert("First and last name fields must be filled out.");
         return false;
   }
+}
+
+//This is for the pop-up form
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
 }
