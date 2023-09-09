@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="myDog"></p>
+        <p id="demo"></p>
+        <p id="Dog"></p>
+
+        <script>
+            /*JavaScript dictionary object*/
+            var dog = {name: "Dax", bread: "Great Pyreness", color: "White"};
+            /*convert JavaScript objects to string format*/
+            /*When sending data to a web server the data has to be a string.*/
+            /*syntax: JSON.stringify(obj, replacer - function to transform the result, white space)*/
+            var JSONstring = JSON.stringify(dog);
+            document.getElementById("myDog").innerHTML = JSONstring;
+
+
+            /*parse(): Parses a JSON string and returns a JavaScript object, so that's the other way around*/JSONstring
+            var obj = JSON.parse('{"firstName":"John", "lastname": "Doe"}');
+            document.getElementById("demo").innerHTML = obj.firstName;
+
+            /*The localStorage object allows you to save key/value pairs in the browser*/
+            /*set the data as a key/value pair to be saved locally in your browser*/
+            localStorage.setItem("Name", "Dax");
+            /*then use the key "Name" to return its value "Dax"*/
+            document.getElementById("Dog").innerHTML = localStorage.getItem("Name");
+
+        </script>
+    </body>
+</html>
