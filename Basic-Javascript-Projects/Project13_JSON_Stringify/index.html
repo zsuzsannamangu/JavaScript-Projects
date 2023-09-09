@@ -4,6 +4,7 @@
         <p id="myDog"></p>
         <p id="demo"></p>
         <p id="Dog"></p>
+        <p id="doubleclick" ondblclick="myFunction()">Double click here!</p>
 
         <script>
             /*JavaScript dictionary object*/
@@ -24,6 +25,10 @@
             localStorage.setItem("Name", "Dax");
             /*then use the key "Name" to return its value "Dax"*/
             document.getElementById("Dog").innerHTML = localStorage.getItem("Name");
+
+            function myFunction() {
+                document.getElementById("doubleclick").style.color="red";
+            }
 
         </script>
     </body>
