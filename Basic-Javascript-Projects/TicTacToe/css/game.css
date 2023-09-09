@@ -1,8 +1,22 @@
 /*This container includes our table and our canvas.*/
 h1 {
-text-align: center;
-
+    text-align: center;
+    /*The text size can be set with a vw unit, which means the "viewport width".*/
+    /*That way the text size will follow the size of the browser window:*/
+    font-size: 4vw;
 }
+
+/*FADE YOUR PAGE*/
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+/*END OF FADE YOUR PAGE*/
+  
 
 .center-container {
     /*This property sets the width of our container.*/
@@ -45,4 +59,18 @@ canvas {
     /*The CSS pointer-events property controls the behavior of 
     HTML elements in response to mouse or touch events.*/
     pointer-events: none;
+}
+
+button {
+    background-color: #211a20; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    cursor: pointer;
 }
