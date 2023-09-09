@@ -40,3 +40,9 @@ footer {
 #todos {
     text-align: center;
 }
+
+/*This adds padding between items in the array after one has been deleted.*/
+/*This class name is in JavaScript*/
+.remove {
+    padding-bottom: 5px;
+}
