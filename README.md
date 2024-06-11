@@ -13,15 +13,11 @@ The classic game of tic-tac-toe. It randomly rolls dice to select which of the t
 A basic 4 function calculator. Users can add, subtract, multiply and divide on a sleek web version of a calculator.
 
 ## Technologies used
-JavaScript, HTML5, CSS3
+_JavaScript, HTML5, CSS3_
 
 ## Author
 
-Zsuzsanna Mangu - _Feel free to contact me at zsuzsannamangu[at]gmail.com with any questions._
-
-## Technologies Used
-
-_Python, Django, Tkinter, pandas, Prophet, matplotlib, plotly, NLTK, Flask, Scikit_Learn, re_
+Zsuzsanna Mangu - _Feel free to contact me at zsuzsannamangu[at]gmail.com with any questions.
 
 ### License
 
