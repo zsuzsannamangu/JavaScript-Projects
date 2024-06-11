@@ -17,7 +17,8 @@ JavaScript, HTML5, CSS3
 
 ## Author
 
-Zsuzsanna Mangu _Feel free to contact me at zsuzsannamangu[at]gmail.com with any questions._
+Zsuzsanna Mangu 
+_Feel free to contact me at zsuzsannamangu[at]gmail.com with any questions._
 
 ## Technologies Used
 
