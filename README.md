@@ -1,7 +1,7 @@
 # JavaScript-Projects
 This repository showcases a collection of projects developed using JavaScript, highlighting my skills in web development and interactive programming.
 
-# Pizza Menu
+# (Pizza Menu) [https://github.com/zsuzsannamangu/JavaScript-Projects/tree/main/Pizza_Project]
 This project is a menu used to order pizza with a various selection of toppings. It then takes the input information and calculates a price for the order.
 
 # Tic-Tac-Toe Game
