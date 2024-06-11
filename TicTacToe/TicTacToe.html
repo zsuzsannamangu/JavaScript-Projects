@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tic Tac Toe game is fun!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/game.css">
+        <script src="js/tictactoe.js"></script>
+    </head>
+    <header>
+        <div class="sticky">
+            <a href=""><button id="contact-btn">Contact</button></a>
+        </div>
+        <h1>Play a Tic Tac Toe Game!</h1>
+    </header>
+    <body id="body">
+        <!--Fade out effect: We add the fade-out class to the body as soon as the page loads. 
+            We can do this with an inline script right after the opening <body> tag:-->
+        <!--The inline script is necessary to prevent flickering, as the body would 
+            otherwise be briefly visible until the extra script is downloaded by the browser.-->
+        <script>
+            document.body.classList.add('fade-out');
+            
+            //we need to remove the fade-out class from the body once the page is loaded:
+            window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out'); 
+            });
+        </script>
+        <!--this container is needed to overlay our canvas over our table. -->
+        <div class="center-container">
+            <!--NOTE: Canvas width and height must be within the element-->
+            <canvas id="win-lines" width="608" height="608"></canvas>
+            <table>
+                <tr>
+                    <td id="0" onclick='placeXOrO("0")'></td>
+                    <td id="1" onclick='placeXOrO("1")'></td>
+                    <td id="2" onclick='placeXOrO("2")'></td>
+                </tr>
+                <tr>
+                    <td id="3" onclick='placeXOrO("3")'></td>
+                    <td id="4" onclick='placeXOrO("4")'></td>
+                    <td id="5" onclick='placeXOrO("5")'></td>
+                </tr>
+                <tr>
+                    <td id="6" onclick='placeXOrO("6")'></td>
+                    <td id="7" onclick='placeXOrO("7")'></td>
+                    <td id="8" onclick='placeXOrO("8")'></td>
+                </tr>
+            </table><br>
+            <p>Tic-tac-toe, noughts and crosses, or Xs and Os is a paper-and-pencil game for two 
+                players who take turns marking the spaces in a three-by-three grid with X or O. 
+                The player who succeeds in placing three of their marks in a horizontal, vertical, 
+                or diagonal row is the winner. </p>
+            <p>Because of the simplicity of tic-tac-toe, it is often used as a pedagogical tool 
+                for teaching the concepts of good sportsmanship and the branch of artificial intelligence 
+                that deals with the searching of game trees. It is straightforward to write a computer program 
+                to play tic-tac-toe perfectly or to enumerate the 765 essentially different positions (the 
+                state space complexity) or the 26,830 possible games up to rotations and reflections (the game 
+                tree complexity) on this space. If played optimally by 
+                both players, the game always ends in a draw, making tic-tac-toe a futile game.</p>
+        </div>
+        
+    </body>
+</html>
