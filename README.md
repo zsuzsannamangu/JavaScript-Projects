@@ -1,5 +1,5 @@
 # JavaScript-Projects
-This repository is for my Tech Academy projects that use JavaScript.
+This repository showcases a collection of projects developed using JavaScript, highlighting my skills in web development and interactive programming.
 
 # Pizza Menu
 This project is a menu used to order pizza with a various selection of toppings. It then takes the input information and calculates a price for the order.
