@@ -1,6 +1,20 @@
 # JavaScript-Projects
 This repository showcases a collection of projects developed using JavaScript, highlighting my skills in web development and interactive programming.
 
+## Projects
+
+### [Pizza Menu](https://github.com/zsuzsannamangu/JavaScript-Projects/tree/main/Pizza_Project)
+**Description:** This project is a menu used to order pizza with a various selection of toppings. It then takes the input information and calculates a price for the order.
+
+### [File Transfer Project](https://github.com/zsuzsannamangu/Python-Projects/tree/master/Python-Projects/File_Transfer_Assignment)
+- **Description:** With this program, you can move files from one folder to another with the click of a button.
+- **Technologies Used:**  Python, Tkinter and the shutil module for moving files.
+
+### [Checkbook Project](https://github.com/zsuzsannamangu/Python-Projects/tree/master/Python-Projects/Checkbook_Project)
+- **Description:** This is an application for keeping track of various bank accounts. The user can create an account, add a transaction (withdrawal or deposit), see their bank account balance and all transactions that apply to it.
+- **Technologies Used:**  Python, Django
+
+
 # [Pizza Menu](https://github.com/zsuzsannamangu/JavaScript-Projects/tree/main/Pizza_Project)
 This project is a menu used to order pizza with a various selection of toppings. It then takes the input information and calculates a price for the order.
 
