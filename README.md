@@ -12,12 +12,34 @@ The classic game of tic-tac-toe. It randomly rolls dice to select which of the t
 ### [Calculator](https://github.com/zsuzsannamangu/JavaScript-Projects/tree/main/Calculator)
 A basic 4 function calculator. Users can add, subtract, multiply and divide on a sleek web version of a calculator.
 
+## Usage
+To run the JavaScript projects in this repository, follow these steps:
+
+1. **Navigate to the project directory:**
+    ```bash
+    cd your-javascript-project
+    ```
+
+2. **Open the `index.html` file in your web browser:**
+    - You can do this by double-clicking the `index.html` file.
+    - Alternatively, you can open a terminal or command prompt, navigate to the project directory, and use a command to open the file. For example, on macOS and Linux:
+      ```bash
+      open index.html
+      ```
+      On Windows:
+      ```bash
+      start index.html
+      ```
+
+3. **Interacting with the Project:**
+    - Use your web browser to interact with the project as intended.
+      
 ## Technologies used
 _JavaScript, HTML5, CSS3_
 
 ## Author
 
-Zsuzsanna Mangu - _Feel free to contact me at zsuzsannamangu[at]gmail.com with any questions.
+Zsuzsanna Mangu - _Feel free to contact me at zsuzsannamangu[at]gmail.com with any questions._
 
 ### License
 
