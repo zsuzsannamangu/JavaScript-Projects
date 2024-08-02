@@ -1,0 +1,33 @@
+#colors {
+    float: left;
+    overflow: hidden;
+    width: 280px;
+}
+
+#colors li {
+    background-color: red;
+    color: black;
+    cursor: auto;
+    font-size: 30px;
+    line-height: 100px;
+    list-style-type: none;
+    list-style-position: inside;
+    height: 100px;
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#colors li.green { background-color: orange; }
+#colors li.blue { background-color: purple; }
+#colors li.yellow { background-color: yellow; }
+#colors li.on { background-color: black; }
+p#start { cursor: pointer; color: darkmagenta; }
+p#start:hover { text-decoration: underline; }
+.playing #colors li {
+    cursor: pointer;
+}
+/*.game-over #colors li {
+    opacity: 0.5;
+}*/
