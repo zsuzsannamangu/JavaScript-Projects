@@ -1,0 +1,12 @@
+.statusMessage {
+    color: red;      /* Example color */
+    font-size: 18px;   /* Example font size */
+    text-align: center; /* Example alignment */
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
